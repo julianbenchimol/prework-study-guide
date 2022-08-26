@@ -19,37 +19,36 @@
         <h2>HTML</h2>
         <ul>
           <li>HTML is the frame of the website, and the "elements" make up the content that is shown.</li>
-          <li>'Head' contains all the meta data for the website, and helps render the page correctly</li>
+          <h3>&lthead&gt Section:</h3>
             <ul>
-              <li>'title' element defines the title for the webpage on the tab in the browser.</li>
-              <li>'link' element connects an external resource to hte HTML document.</li>
-              <li>'meta' element defines meta data, such as character sets, descriptions, keywords, author, and viewports.</li>
-              <li>'script' element connects any client side scripts to the HTML file.</li>
-              <li><b>Note:</b> anything in the head is not visable</li>
+              <li>&lthead&gt contains all the meta data for the website, and helps render the page correctly</li>
+              <li>&lttitle&gt element defines the title for the webpage on the tab in the browser.</li>
+              <li>&ltlink&gt element connects an external resource to hte HTML document.</li>
+              <li>&ltmeta&gt element defines meta data, such as character sets, descriptions, keywords, author, and viewports.</li>
+              <li>&ltscript&gt element connects any client side scripts to the HTML file.</li>
+              <li><b>Note:</b> Anything in the head is not visable</li>
             </ul>
-          <li>'Body' contains the elements shown to the user, and are what we want them to interact with.</li>
+          <h3>&ltbody&gt Section:</h3>
             <ul>
-              <li>'body' is an example of semantic HTML, which has the tag directly explain what the element does.</li>
-              <li>'h1->h6' elements represent the level of heading a given text block represents</li>
-                <ul><li><b>Note:</b> h1 is the highest, h6 is the lowest.</li></ul>
-              <li>'p' element represents a free block of text.</li>
-              <li>'ul' element represents an unordered list.</li>
-              <li>'ol' element represents an ordered list.</li>
-              <li>'li' is often used inside lists to make bullet points.</li>
-              <li>'img' element contains infor about pictures that are displayed.</li>
-                <ul><li><b>Note:</b> Contains various attributes, but 'src' defines the locaiton of the image.</li></ul>
-              <li>'br' element creates a line of empty space, or a page break.</li>
-              <li>'a' element (anchor) creates links to the same, or other webpages.</li>
-                <ul><li><b>Note:</b> 'href' attribute points to the URL for the link.</li></ul>
-              <li>'header' element and all children appear at the top of the page.</li>
-              <li>'footer' element and all children appear at the bottom of the page.</li>
-              <li>'section' element adds all children to a section of code.</li>
-                <ul><li><b>Note:</b> Sections can be altered by using its 'id' and 'class' attributes in CSS stylesheet.</li></ul>
-
-
-
+              <li>&ltbody' contains the elements shown to the user, and are what we want them to interact with.</li>
+              <li>&ltbody&gt is an example of semantic HTML, which has the tag directly explain what the element does.</li>
+              <li>&lth1->h6&gt elements represent the level of heading a given text block represents</li>
+                <ul><li><b>Note:</b> &lth1&gt is the highest, &lth6&gt is the lowest.</li></ul>
+              <li>&ltp&gt element represents a free block of text.</li>
+              <li>&ltul&gt element represents an unordered list.</li>
+              <li>&ltol&gt element represents an ordered list.</li>
+              <li>&ltli&gt is often used inside lists to make bullet points.</li>
+              <li>&ltimg&gt element contains infor about pictures that are displayed.</li>
+                <ul><li><b>Note:</b> Contains various attributes, but &ltsrc&gt defines the locaiton of the image.</li></ul>
+              <li>&ltbr&gt element creates a line of empty space, or a page break.</li>
+              <li>&lta&gt element (anchor) creates links to the same, or other webpages.</li>
+                <ul><li><b>Note:</b> &lthref&gt attribute points to the URL for the link.</li></ul>
+              <li>&ltheader&gt element and all children appear at the top of the page.</li>
+              <li>&ltfooter&gt element and all children appear at the bottom of the page.</li>
+              <li>&ltsection&gt element adds all children to a section of code.</li>
+                <ul><li><b>Note:</b> Sections can be altered by using its &ltid&gt and &ltclass&gt attributes in CSS stylesheet.</li></ul>
             </ul>
-          <li>'!DECLARATION html' is a declaration that tells the browser what kind of document it should expect when opened.</li>
+          <li>&lt!DECLARATION html&gt is a declaration that tells the browser what kind of document it should expect when opened.</li>
             <ul><li>Note: This is usually put at the very top of the HTML file.</li></ul>
         </ul>
 
@@ -58,8 +57,73 @@
       <section class = "card" id = "css-section">
         <h2>CSS</h2>
         <ul>
-          <li>Enter your CSS notes hear.</li>
-        </ul>
+          <li>CSS is used to define how webpage content is presented.</li>
+          <li>There are three ways to style a webpage using CSS:</li>     
+            <ul> 
+              <h4>1. Inline CSS:</h4>
+                <ul>
+                  <li>Written directly in the HTML file</li>
+                  <li>Applies to a specific HTML tag, using a style attribute to <b>style a specific page element only.</b></li>
+                  <li>Is a quick and permanent change.</li>
+                  <li>Is a less flexible change than style sheets because each inline must be edited individually.</li>
+                </ul>           
+              <h4>2. Internal CSS Stylesheet:</h4>
+                <ul>
+                  <li>Embedded in &lthead&gt section.</li>
+                  <li>Can configure CSS classes and IDs.</li>
+                  <li>one change applies to all the tagged items.</li>
+                  <li><b>Any rules are only applied to the individual page.</b></li>
+                </ul>
+              <h4>3. External CSS Stylesheet:</h4>
+                <ul>
+                  <li>Allows the ability to keep all CSS rules seperate.</li>
+                  <li>Makes design changes easier.</li>
+                  <li>Linked to HTML using &ltlink&gt placed in &lthead&gt</li>
+                  <ul><li><b>Example: </b>&ltlink rel = "stylesheet" href = "./assets/style.css"&gt</li></ul>
+                </ul>
+            </ul>  
+            <h3>Declarations:</h3>  
+              <ul>
+                <li>Declarations contain two important components:</li>
+                  <ul>
+                    <li>1. CSS property we want to change.</li>
+                    <li>2. The new value of the property</li>
+                      <ul><li><b>Example:</b> div{color: blue; text-align: justify}</li>
+                        <li>div: the selector of a certain sector.</li>
+                        <li>color, text-align: the property to be changed.</li>
+                        <li>blue, justify: the new value of the property.</li>
+                    </ul>
+                </ul>
+              </ul>
+            <h3>Types of CSS Properties:</h3>
+              <ul>
+                <li>margin: How much space we want <b>OUTSIDE</b> an element. A margin of 0 indicates there are no extra space.</li>
+                <li>padding: Adds space around the content <b>INSIDE</b> the element.</li>
+                  <ul><li><b>Note:</b> Padding is located inside the element, whereas margin is located outside.</li></ul>
+                <li>When applying something to all elements on a page, use the * sector.</li>
+                <li>It is possible to link sectors if they have similar styles.</li>
+                  <ul><li><b>Example: </b>header,footer{} means anything inside will apply to both header and footer elements.</li></ul>
+                <li>&lth1...h6&gt elements can be styled as sectors, along with &ltimg&gt to style pictures, and &ltul&gt to style lists.</li>
+            </ul>
+          <h3>Linking a Stylesheet to the HTML Document:</h3>
+            <ul>
+              <li>In the &lthead&gt section:</li>
+                <ul>
+                  <li>&ltlink rel = "stylesheet" href = "./assets/style.css"&gt</li>
+                    <ul>
+                      <li>Link creates a connection to the linked document.</li>
+                      <li>Rel is the relationship between the current HTML document and the linked document.</li>
+                      <li>href specifies the location of the external source. As it is in the assets folder, it is linked by "./assets/style.css"</li>
+                  </ul>
+              </ul>
+          </ul>
+          <h3>Adding Style using Class Attributes:</h3>
+            <ul>
+              <li>To use a class selector, use a period before hand.</li>
+                <ul><li><b>Example:</b> .card will select any class with the '.card' class assigned.</li></ul>
+              <li>Any HTML element assigned to the class will gain the properties specified.</li>
+          </ul>
+      </ul>
 
 
       </section>
