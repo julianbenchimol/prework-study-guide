@@ -157,9 +157,27 @@
       <section class = "card" id = "git-section">
         <h2>Git</h2>
         <ul>
-          <li>Enter your Git notes hear.</li>
-        </ul>
+          <li>Git is used as a version control tool.</li>
+          <h3>Types of Git Commands: </h3>
+            <ul>
+              <li>git add -A will add all local changes to be committed.</li>
+              <li>git commit -m "(commit message)" will commit all added changes to be pushed.</li>
+              <li>git pull origin main/master: pulls the master branch to your machine and merges your changes with the master <b>locally.</b></li>
+              <li>git push origin (branch name): will push the merged changes of the current branch and main branch to the repo.</li>
+              <li>git checkout -b (branch name): will create a new branch with the indicated branch name.</li>
+              <li>git checkout (branch name): will not create a new branch, but swap you to the branch named (branch name).</li>
 
+          </ul>
+          <h3>Git Workflow:</h3>
+          <ol>
+            <li>git add -A to add all local changes to be committed.</li>
+            <li>git commit -m "(commit message)" to commit the added changes with the message (commit message).</li>
+            <li>git pull origin main to make sure that your branch is up to date with any changes made to the master branch.</li>
+            <li>git push origin (current branch) to send the merged files to the repo.</li>
+            <li>git check out main to swap to the main branch.</li>
+            <li>git pull origin main to pull the updated master branch to your local machine.</li>
+          </ol>
+        </ul>
 
       </section>
     </main>
